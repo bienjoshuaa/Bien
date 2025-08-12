@@ -1,7 +1,6 @@
 import { motion } from 'framer-motion'
 import { profile } from '../data/data'
 import bienImage from '../assets/Bien.jpg'
-import bienImage2 from '../assets/Bien2.jpg'
 
 export default function Hero() {
   return (
@@ -97,48 +96,25 @@ export default function Hero() {
           className="flex justify-center md:justify-start md:pl-8"
         >
           <div className="relative group">
-            {/* Grid Layout - Both Images Side by Side */}
-            <div className="flex gap-4">
-              {/* Left Image - Professional Pose */}
-              <motion.div 
-                whileHover={{ 
-                  scale: 1.05,
-                  rotateY: 5,
-                  rotateX: 5
-                }}
-                transition={{ duration: 0.3 }}
-                className="relative w-[280px] h-[400px] rounded-xl overflow-hidden border-2 border-zinc-800 shadow-2xl hover:shadow-3xl transition-all duration-300 cursor-pointer"
-              >
-                <img 
-                  src={bienImage} 
-                  alt="Bien Joshua Macuha - Professional" 
-                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-                />
-                
-                {/* Subtle overlay on hover */}
-                <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-              </motion.div>
+            {/* Single Image */}
+            <motion.div 
+              whileHover={{ 
+                scale: 1.05,
+                rotateY: 5,
+                rotateX: 5
+              }}
+              transition={{ duration: 0.3 }}
+              className="relative w-[400px] h-[560px] rounded-xl overflow-hidden border-2 border-zinc-800 shadow-2xl hover:shadow-3xl transition-all duration-300 cursor-pointer"
+            >
+              <img 
+                src={bienImage} 
+                alt="Bien Joshua Macuha" 
+                className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+              />
               
-              {/* Right Image - Creative Pose */}
-              <motion.div 
-                whileHover={{ 
-                  scale: 1.05,
-                  rotateY: -5,
-                  rotateX: -5
-                }}
-                transition={{ duration: 0.3 }}
-                className="relative w-[280px] h-[400px] rounded-xl overflow-hidden border-2 border-zinc-700 shadow-2xl hover:shadow-3xl transition-all duration-300 cursor-pointer"
-              >
-                <img 
-                  src={bienImage2} 
-                  alt="Bien Joshua Macuha - Creative" 
-                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-                />
-                
-                {/* Subtle overlay on hover */}
-                <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-              </motion.div>
-            </div>
+              {/* Subtle overlay on hover */}
+              <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+            </motion.div>
             
             {/* Floating accent elements */}
             <motion.div
