@@ -4,7 +4,7 @@ export const profile = {
   phone: '+63 966 287 4088',
   location: 'Sambat, San Pascual, Batangas',
   summary:
-    'Graduating IT student passionate about back-end development and data analytics. Experienced in Django, PHP, PostgreSQL, Python, and Excel for data-driven solutions. Seeking roles as Software Developer, Business Analyst, or IT Support.',
+    'Graduating IT student passionate about back-end development and data analytics. Experienced in Django, PHP, PostgreSQL, Python, and Excel for data-driven solutions. Seeking roles as Software Developer or Quality Assurance Tester.',
   social: {
     github: '#',
     linkedin: '#',
@@ -45,7 +45,7 @@ export const experience = [
   },
   {
     role: 'Director for Membership',
-    org: 'Junior Philippine Computer Society',
+    org: 'Junior Philippine Computer Society - Alangilan',
     period: 'Aug 2024 – Jul 2025',
     details: 'Led membership engagement and growth initiatives.',
   },
