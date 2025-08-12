@@ -66,8 +66,9 @@ export default function Hero() {
             className="flex flex-wrap gap-4"
           >
             <a
-              href="/assets/cv.pdf"
-              download
+              href="https://drive.google.com/file/d/1zJzOCvZjTfvV8x0nqg7p3Dx8I4QvBJJ7/view?usp=sharing"
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-medium transition-colors"
             >
               <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
