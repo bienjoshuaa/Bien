@@ -18,23 +18,23 @@ export default function Skills() {
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ duration: 0.4, delay: index * 0.1 }}
+              transition={{ duration: 0.3, delay: index * 0.08 }}
               whileHover={{ 
                 scale: 1.05, 
                 y: -5,
                 rotateY: 5
               }}
               whileTap={{ scale: 0.95 }}
-              className="card flex items-center gap-3 hover:border-zinc-700 hover:bg-zinc-800/50 transition-all duration-300 cursor-pointer group"
+              className="card flex items-center gap-3 hover:border-zinc-700 hover:bg-zinc-800/50 transition-all duration-150 cursor-pointer group"
             >
               <motion.div 
-                className="text-accent text-xl group-hover:scale-110 transition-transform duration-300"
+                className="text-accent text-xl group-hover:scale-110 transition-transform duration-150"
                 whileHover={{ rotate: 360 }}
-                transition={{ duration: 0.6 }}
+                transition={{ duration: 0.25 }}
               >
                 {Icon ? <Icon /> : <Fa.FaCheck />}
               </motion.div>
-              <div className="font-medium text-primary text-sm group-hover:text-white transition-colors duration-300">{name}</div>
+              <div className="font-medium text-primary text-sm group-hover:text-white transition-colors duration-150">{name}</div>
             </motion.div>
           )
         })}

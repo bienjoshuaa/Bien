@@ -20,17 +20,17 @@
 
 @layer utilities {
   .container-responsive {
-    @apply max-w-6xl mx-auto px-8;
+    @apply max-w-6xl mx-auto px-4 sm:px-6 md:px-8;
   }
 }
 
 @layer components {
   .section-padding {
-    @apply py-20;
+    @apply py-14 sm:py-16 md:py-20;
   }
   
   .card {
-    @apply bg-zinc-900 border border-zinc-800 rounded-lg p-6;
+    @apply bg-zinc-900 border border-zinc-800 rounded-lg p-5 sm:p-6;
   }
   
   .text-primary {

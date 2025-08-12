@@ -118,26 +118,25 @@ export default function Contact() {
                 rel="noreferrer"
                 initial={{ opacity: 0, scale: 0.8 }}
                 whileInView={{ opacity: 1, scale: 1 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.4, delay: index * 0.1 }}
+                transition={{ duration: 0.25, delay: index * 0.08 }}
                 whileHover={{ 
                   scale: 1.1, 
                   y: -5,
                   rotateY: 10
                 }}
                 whileTap={{ scale: 0.95 }}
-                className="card hover:border-zinc-700 hover:bg-zinc-800/50 transition-all duration-300 cursor-pointer group flex flex-col items-center justify-center py-6"
+                className="card hover:border-zinc-700 hover:bg-zinc-800/50 transition-all duration-150 cursor-pointer group flex flex-col items-center justify-center py-6"
               >
-                <span className="text-4xl mb-2 group-hover:scale-110 transition-transform duration-300">
+                <span className="text-4xl mb-2 group-hover:scale-110 transition-transform duration-150">
                   {social.icon}
                 </span>
-                <span className="text-sm text-secondary group-hover:text-white transition-colors duration-300 font-medium">
+                <span className="text-sm text-secondary group-hover:text-white transition-colors duration-150 font-medium">
                   {social.name}
                 </span>
                 
                 {/* Hover glow effect */}
                 <motion.div 
-                  className="absolute inset-0 rounded-lg bg-gradient-to-r from-blue-500/10 to-purple-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300 -z-10"
+                  className="absolute inset-0 rounded-lg bg-gradient-to-r from-blue-500/10 to-purple-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-150 -z-10"
                   initial={{ scale: 0.8 }}
                   whileHover={{ scale: 1.2 }}
                 />

@@ -5,7 +5,7 @@ import bienImage from '../assets/Bien.jpg'
 export default function Hero() {
   return (
     <section id="hero" className="container-responsive section-padding">
-      <div className="grid md:grid-cols-2 gap-16 items-center">
+      <div className="grid md:grid-cols-2 gap-10 md:gap-16 items-center">
         <motion.div 
           initial={{ opacity: 0, y: 20 }} 
           whileInView={{ opacity: 1, y: 0 }} 
@@ -29,7 +29,7 @@ export default function Hero() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.2 }}
-              className="text-5xl sm:text-6xl font-bold text-white leading-tight"
+              className="text-4xl sm:text-5xl md:text-6xl font-bold text-white leading-tight"
             >
               {profile.name}
             </motion.h1>
@@ -104,17 +104,17 @@ export default function Hero() {
                 rotateY: 5,
                 rotateX: 5
               }}
-              transition={{ duration: 0.3 }}
-              className="relative w-[400px] h-[560px] rounded-xl overflow-hidden border-2 border-zinc-800 shadow-2xl hover:shadow-3xl transition-all duration-300 cursor-pointer"
+              transition={{ duration: 0.15 }}
+              className="relative w-[260px] h-[340px] sm:w-[300px] sm:h-[420px] md:w-[350px] md:h-[500px] lg:w-[400px] lg:h-[560px] rounded-xl overflow-hidden border-2 border-zinc-800 shadow-2xl hover:shadow-3xl transition-all duration-300 cursor-pointer"
             >
               <img 
                 src={bienImage} 
                 alt="Bien Joshua Macuha" 
-                className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-200"
               />
               
               {/* Subtle overlay on hover */}
-              <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-150" />
             </motion.div>
             
             {/* Floating accent elements */}

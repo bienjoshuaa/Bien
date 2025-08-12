@@ -12,22 +12,22 @@ export default function Education() {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.4, delay: index * 0.1 }}
+            transition={{ duration: 0.3, delay: index * 0.08 }}
             whileHover={{ 
               scale: 1.03, 
               y: -5,
               rotateY: 3
             }}
             whileTap={{ scale: 0.98 }}
-            className="card hover:border-zinc-700 hover:bg-zinc-800/50 transition-all duration-300 cursor-pointer group"
+            className="card hover:border-zinc-700 hover:bg-zinc-800/50 transition-all duration-150 cursor-pointer group"
           >
             <h3 className="font-semibold text-primary text-base group-hover:text-white transition-colors duration-300">{e.title}</h3>
-            <div className="text-sm text-secondary mt-1 group-hover:text-zinc-300 transition-colors duration-300">{e.school}</div>
-            <div className="text-sm text-secondary group-hover:text-zinc-300 transition-colors duration-300">{e.period}</div>
+            <div className="text-sm text-secondary mt-1 group-hover:text-zinc-300 transition-colors duration-150">{e.school}</div>
+            <div className="text-sm text-secondary group-hover:text-zinc-300 transition-colors duration-150">{e.period}</div>
             
             {/* Hover indicator */}
             <motion.div 
-              className="absolute top-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+              className="absolute top-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity duration-150"
               initial={{ scale: 0 }}
               whileHover={{ scale: 1 }}
             >

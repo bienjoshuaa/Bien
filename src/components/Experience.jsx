@@ -18,11 +18,11 @@ export default function Experience() {
               className="relative pl-10 sm:pl-14 group"
             >
               <motion.div 
-                className="absolute left-5 sm:left-7 top-3 h-4 w-4 rounded-full bg-accent group-hover:scale-125 transition-transform duration-300"
+                className="absolute left-5 sm:left-7 top-3 h-4 w-4 rounded-full bg-accent group-hover:scale-125 transition-transform duration-150"
                 whileHover={{ scale: 1.3 }}
               />
               <motion.div 
-                className="card hover:border-zinc-700 hover:bg-zinc-800/50 transition-all duration-300 cursor-pointer"
+                className="card hover:border-zinc-700 hover:bg-zinc-800/50 transition-all duration-150 cursor-pointer"
                 whileHover={{ 
                   scale: 1.02, 
                   x: 5,
@@ -39,7 +39,7 @@ export default function Experience() {
                 
                 {/* Hover indicator */}
                 <motion.div 
-                  className="absolute top-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                  className="absolute top-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity duration-150"
                   initial={{ scale: 0 }}
                   whileHover={{ scale: 1 }}
                 >

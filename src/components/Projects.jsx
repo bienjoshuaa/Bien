@@ -22,20 +22,20 @@ export default function Projects() {
               rotateY: 3
             }}
             whileTap={{ scale: 0.98 }}
-            className="card hover:border-zinc-700 hover:bg-zinc-800/50 transition-all duration-300 cursor-pointer group"
+            className="card hover:border-zinc-700 hover:bg-zinc-800/50 transition-all duration-150 cursor-pointer group"
           >
             <motion.div 
-              className="aspect-video bg-zinc-800 mb-4 rounded group-hover:bg-zinc-700 transition-colors duration-300"
+              className="aspect-video bg-zinc-800 mb-4 rounded group-hover:bg-zinc-700 transition-colors duration-150"
               whileHover={{ scale: 1.02 }}
-              transition={{ duration: 0.3 }}
+              transition={{ duration: 0.15 }}
             />
-            <div className="text-sm text-accent font-medium group-hover:text-blue-300 transition-colors duration-300">{p.tech}</div>
-            <h3 className="mt-2 font-semibold text-primary text-base group-hover:text-white transition-colors duration-300">{p.title}</h3>
-            <p className="mt-2 text-secondary text-sm leading-relaxed group-hover:text-zinc-300 transition-colors duration-300">{p.desc}</p>
+            <div className="text-sm text-accent font-medium group-hover:text-blue-300 transition-colors duration-150">{p.tech}</div>
+            <h3 className="mt-2 font-semibold text-primary text-base group-hover:text-white transition-colors duration-150">{p.title}</h3>
+            <p className="mt-2 text-secondary text-sm leading-relaxed group-hover:text-zinc-300 transition-colors duration-150">{p.desc}</p>
             
             {/* Hover indicator */}
             <motion.div 
-              className="absolute top-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+              className="absolute top-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity duration-150"
               initial={{ scale: 0 }}
               whileHover={{ scale: 1 }}
             >
