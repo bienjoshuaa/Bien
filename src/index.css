@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    background-color: #0a0a0a;
+    color: #ffffff;
+    font-size: 16px;
+  }
+  
+  body {
+    background-color: #0a0a0a;
+    color: #ffffff;
+    font-size: 16px;
+    line-height: 1.6;
+  }
+}
+
+@layer utilities {
+  .container-responsive {
+    @apply max-w-6xl mx-auto px-8;
+  }
+}
+
+@layer components {
+  .section-padding {
+    @apply py-20;
+  }
+  
+  .card {
+    @apply bg-zinc-900 border border-zinc-800 rounded-lg p-6;
+  }
+  
+  .text-primary {
+    @apply text-zinc-100;
+  }
+  
+  .text-secondary {
+    @apply text-zinc-400;
+  }
+  
+  .text-accent {
+    @apply text-blue-400;
+  }
+  
+  .section-title {
+    @apply text-3xl font-bold mb-8 text-white;
+  }
+  
+  .section-subtitle {
+    @apply text-lg text-zinc-300 leading-relaxed;
+  }
+}
