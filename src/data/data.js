@@ -4,7 +4,7 @@ export const profile = {
   phone: '+63 966 287 4088',
   location: 'Sambat, San Pascual, Batangas',
   summary:
-    'Graduating IT student passionate about back-end development and data analytics. Experienced in Django, PHP, PostgreSQL, Python, and Excel for data-driven solutions. Seeking roles as Software Developer or Quality Assurance Tester.',
+    'Fresh graduate IT student passionate about back-end development and data analytics. Experienced in Django, PHP, PostgreSQL, Python, and Excel for data-driven solutions. Seeking roles as Software Developer or Quality Assurance Tester.',
   social: {
     github: '#',
     linkedin: '#',
@@ -77,7 +77,7 @@ export const certificates = [
 
 export const education = [
   {
-    title: 'BS in Information Technology (Business Analytics)',
+    title: 'BS in Information Technology Major in Business Analytics)',
     school: 'Batangas State University',
     period: 'Aug 2021 – Jul 2025',
   },
