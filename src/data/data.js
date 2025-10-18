@@ -13,14 +13,22 @@ export const profile = {
 
 export const skills = [
   { name: 'Python', icon: 'SiPython' },
-  { name: 'SQL', icon: 'SiPostgresql' },
+  { name: 'PostgreSQL', icon: 'SiPostgresql' },
+  { name: 'MySQL', icon: 'SiMysql' },
+  { name: 'JavaScript', icon: 'SiJavascript' },
   { name: 'HTML', icon: 'SiHtml5' },
   { name: 'CSS', icon: 'SiCss3' },
   { name: 'PHP', icon: 'SiPhp' },
+  { name: 'Django', icon: 'SiDjango' },
+  { name: 'React', icon: 'SiReact' },
+  { name: 'Flutter', icon: 'SiFlutter' },
+  { name: 'Firebase', icon: 'SiFirebase' },
+  { name: 'Node.js', icon: 'SiNodejs' },
   { name: 'Leadership', icon: 'FaUserTie' },
   { name: 'Critical Thinking', icon: 'FaBrain' },
   { name: 'Time Management', icon: 'FaClock' },
   { name: 'Adaptability', icon: 'FaSync' },
+
 ]
 
 export const experience = [
@@ -58,6 +66,13 @@ export const projects = [
     desc: 'Voting system, event resource allocation, attendance tracking, venue recommendations, performance assessment.',
     image: '/src/assets/project1.png',
     link: 'https://github.com/CastroClarence/papsas',
+  },
+  {
+    title: 'Marbien Trading System',
+    tech: 'Next.js + Firebase + Tailwind CSS',
+    desc: 'Professional Automotive Repair & Parts Management system for the Marbien Trading System company',
+    image: '/src/assets/project2.png',
+    link: 'marbien-trading.web.app',
   },
   {
     title: 'Recycling Management System',

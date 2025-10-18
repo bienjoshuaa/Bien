@@ -5,7 +5,6 @@ import { profile } from '../data/data'
 
 const navItems = [
   { id: 'hero', label: 'Home' },
-  { id: 'about', label: 'About' },
   { id: 'skills', label: 'Skills' },
   { id: 'experience', label: 'Experience' },
   { id: 'projects', label: 'Projects' },
